@@ -1,0 +1,70 @@
+:root{//this will  make the variables be available for all the css file
+    --color-primary: #52499e;
+    --color-primary-light: #6A80BA;
+    --color-primary-dark: #4F6296;
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0 , .3);
+    --shadow-light:  0 2rem 5rem rgba(0,0,0,.06);
+    --line: 1px solid var(--color-grey-light-2);
+
+}
+
+$bp-ultrawide: 156.25em;//2500px
+$bp-big: 112.5em;//1800px
+$bp-laptop: 90em;//1440px
+$bp-largest: 75em;//1200px (1200/16)
+$bp-large: 68.75em;//1100px (1100/16)
+$bp-medium: 56.25em;//900px
+$bp-small: 37.5em;//600px
+$bp-smallest: 31.25em; //500px
+$bp-mobile: 28.125em; //450px
+$bp-sm-mobile:23.75em;//380px
+$bp-ultra-small: 12.5em;//200px
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 62.5% of 16 = 10px
+
+    
+    @media only screen and (min-width: $bp-big){
+        font-size: 80%;
+    }
+
+    @media only screen and (min-width: $bp-ultrawide){
+        font-size: 100%;
+    }
+
+
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+}
+
+body{
+    color: var(--color-grey-dark-2);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-size: cover;
+    min-height: 100vh;
+}
