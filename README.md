@@ -7,5 +7,5 @@ This is an interface of a booking app made with pure CSS3/SASS. In this project 
 * Responsive layout
 
 
-[Live Demo](https://riltonfranzonee.github.io/booking-app/)
+[Live Demo](https://riltonfranzonee.github.io/booking-interface/)
 
